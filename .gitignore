@@ -1,0 +1,21 @@
+.DS_Store
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Local verification packages, model files, and captures
+ref/
+output/
+*.[uU][nN][iI][tT][yY][pP][aA][cC][kK][aA][gG][eE]
+*.fbx
+*.FBX
+*.vrm
+*.glb
+*.gltf
+!src/model/fixtures/sparse.fbx
+
+# Local Cloudflare state and environment variables
+.wrangler/
+.dev.vars*
+.env
+.env.*
