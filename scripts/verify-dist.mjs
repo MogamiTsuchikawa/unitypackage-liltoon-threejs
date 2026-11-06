@@ -6,7 +6,7 @@ import path from "node:path";
 
 const dist = fileURLToPath(new URL("../dist/", import.meta.url));
 const expected = new Set([
-  "index.html", "mark.svg",
+  "index.html", "mark.svg", "licenses/project.txt",
   "licenses/three-liltoon.txt", "licenses/three-liltoon-notices.md",
   "licenses/three.txt", "licenses/yaml.txt",
 ]);
