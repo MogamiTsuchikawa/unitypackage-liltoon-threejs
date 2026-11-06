@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+ <title id="title">Unityアバターを、ブラウザで。</title>
+ <desc id="desc">unitypackage-liltoon-threejs の共有カード。ローカルのパッケージと、プレビュー内のオリジナルの小さなロボットを描いた図。</desc>
+ <defs>
+  <radialGradient id="ambient" cx=".78" cy=".52" r=".78"><stop stop-color="#3d3630"/><stop offset=".63" stop-color="#202024"/><stop offset="1" stop-color="#18191c"/></radialGradient>
+  <radialGradient id="stage" cx=".53" cy=".66" r=".72"><stop stop-color="#554739"/><stop offset=".55" stop-color="#342f2c"/><stop offset="1" stop-color="#282728"/></radialGradient>
+  <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0v24" fill="none" stroke="#e8b975" stroke-opacity=".085" stroke-width="1"/></pattern>
+  <clipPath id="scene"><rect x="729" y="194" width="402" height="292"/></clipPath>
+  <style>
+   text{font-family:'Helvetica Neue','Hiragino Sans','Yu Gothic',sans-serif}
+   .mono{font-family:'SFMono-Regular',Menlo,Consolas,monospace}
+   .jp{font-family:'Hiragino Sans','Yu Gothic','Noto Sans JP',sans-serif}
+  </style>
+ </defs>
+ <rect width="1200" height="630" fill="url(#ambient)"/>
+ <!-- The package mark repeats public/mark.svg's geometry so the editable source is standalone. -->
+ <g transform="translate(61 47) scale(1.13)">
+  <rect width="40" height="40" rx="10" fill="#e8b975"/>
+  <g fill="none" stroke="#211d18" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m20 6 12 7v14l-12 7-12-7V13zM8 13l12 7 12-7M20 20v14"/><path d="m14 9 12 7v7"/></g>
+ </g>
+ <text x="121" y="78" fill="#f5f1ec" font-size="25" font-weight="600" letter-spacing="-.7">unitypackage-liltoon-threejs</text>
+ <path d="M62 120H1138" stroke="#494746"/>
+ <g transform="translate(62 184)">
+  <path d="M0 -4h31" stroke="#e8b975" stroke-width="2.5"/>
+  <text x="43" fill="#eac28d" font-size="16" class="mono" letter-spacing="2">AVATAR VIEWER</text>
+ </g>
+ <text class="jp" x="59" y="281" font-size="64" font-weight="800" fill="#f5f1ea" letter-spacing="-3">Unityアバターを、</text>
+ <text class="jp" x="57" y="374" font-size="77" font-weight="800" fill="#edbf80" letter-spacing="-3">ブラウザで。</text>
+ <text class="jp" x="64" y="437" font-size="22" fill="#ded9d2" letter-spacing="-.4">.unitypackage を開いて、lilToon の陰影や</text>
+ <text class="jp" x="64" y="471" font-size="22" fill="#ded9d2" letter-spacing="-.4">表情・動きをその場で確認。</text>
+
+ <!-- An editorial mock viewport, with a helmet illustrated purely from paths. -->
+ <rect x="728" y="154" width="404" height="333" rx="11" fill="#232326" stroke="#746956" stroke-width="1.5"/>
+ <path d="M730 193H1130" stroke="#554e45"/>
+ <g fill="#a99b86"><circle cx="748" cy="174" r="3.3"/><circle cx="760" cy="174" r="3.3"/><circle cx="772" cy="174" r="3.3"/></g>
+ <text class="mono" x="800" y="178" fill="#d5c7b3" font-size="12" letter-spacing="1.5">MATERIAL PREVIEW</text>
+ <circle cx="1110" cy="174" r="4" fill="#e8b975"/>
+ <g clip-path="url(#scene)">
+  <rect x="729" y="194" width="402" height="292" fill="url(#stage)"/>
+  <rect x="729" y="194" width="402" height="292" fill="url(#grid)"/>
+  <g fill="none" stroke="#b69c77">
+   <circle cx="949" cy="338" r="123" opacity=".32" stroke-dasharray="2 7"/>
+   <path d="M752 226v-9h10m337 9v-9h-10m10 249v9h-10" opacity=".7" stroke-width="1.4"/>
+   <ellipse cx="947" cy="399" rx="142" ry="34" transform="rotate(-14 947 399)" opacity=".34"/>
+  </g>
+  <!-- Robot preview: original faceted forms with a two-tone cel-shaded rim. -->
+  <g stroke="#211f21" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+   <path fill="#b88d59" d="m908 411 24-13 35-1 37 16 38 43-4 51-162-1-8-45z"/>
+   <path fill="#e9c494" d="m925 406 25 7 17-9 32 14 11 27-21 25-85-6-21-24 18-22z"/>
+   <path fill="#7e624b" d="m988 410 19 9 31 35-4 41-33 5-9-25 14-23z"/>
+   <path fill="#685443" d="m877 445 27 19 82 7 19 26-143 6z"/>
+   <path fill="#302e2d" d="m910 403 13-23 53 3 12 24-20 17-31-1z"/>
+   <path fill="#72614e" d="m918 395 12 11 28 4 23-9-7-13z"/>
+   <path fill="none" d="m925 401 12 7 21 2 16-5" stroke="#302d28" stroke-width="2"/>
+   <path fill="#bd905a" d="m882 269 11-33 11 6-7 42z"/>
+   <path fill="#fae8ce" d="m892 238 4-13 11 1 6 9-7 14-11 1z"/>
+   <path fill="#d9ad77" d="m889 272 23-26 55-13 42 19 21 35 1 34-17 45-25 27-49 14-43-14-27-34-1-48z"/>
+   <path fill="#f2d6b1" d="m889 272 23-26 55-13 42 19 14 25-35-15-48-6-37 18-28 37z" stroke="none"/>
+   <path fill="#a87749" d="m1015 257 16 30v35l-17 44-25 27-49 14 17-16 29-17 22-47 8-34z" stroke="none"/>
+   <path fill="#f8e5ca" d="m886 280 20-13 46-10 34 2 13 9-51-2-39 11-23 19z" stroke="none"/>
+   <path fill="#574c3f" d="m885 296 22-18 39-10 41 4 19 12 4 31-13 33-19 14-32 9-41-3-22-17-9-22z"/>
+   <path fill="#282a2b" d="m882 301 24-16 41-8 37 2 16 9 1 27-11 29-18 12-30 7-38-3-19-15-7-20z"/>
+   <path fill="#34373a" d="m883 303 25-16 38-8 35 1 11 5-44 4-51 22-15 19-2-10z" stroke="none"/>
+   <g fill="#edc080" stroke="none">
+    <path d="M896 320q11-18 24-12l2 7q-14-3-25 12z"/>
+    <path d="M947 305q15-15 29-7l-1 7q-15-5-28 8z"/>
+   </g>
+   <g fill="#ffe1aa" stroke="none"><path d="m904 313 8-3 2 2-9 4z"/><path d="m955 301 13-2 2 2-12 2z"/></g>
+   <path fill="#a28061" d="m917 379 27 4 26-7-9 12-20 5-22-6z" stroke="none"/>
+   <g transform="translate(1016 320) rotate(13)">
+    <ellipse rx="18" ry="26" fill="#9a7350"/><ellipse rx="12" ry="19" fill="#dac6a6"/>
+    <path d="M-4 4 4-4" stroke="#886e53" stroke-width="2"/>
+   </g>
+   <g fill="#f7deb8" stroke="none"><path d="m926 443 9-5 10 4v10l-10 5-9-5z"/><path d="m936 439 8 3-8 4-8-3z" fill="#b58f63"/></g>
+   <path d="m953 443 16 1" stroke="#9d835f" stroke-width="2"/>
+  </g>
+ </g>
+ <!-- A package enters the viewport. -->
+ <g transform="translate(612 354)" stroke-linejoin="round" stroke-linecap="round">
+  <path d="M68 64h51m-8-8 8 8-8 8" fill="none" stroke="#e4b37c" stroke-width="2.2"/>
+  <g stroke="#edc28c" stroke-width="1.8">
+   <path fill="#6f5942" d="m-2 42 34-20 35 20-35 21z"/>
+   <path fill="#544634" d="m-2 42 34 21v39l-34-20z"/>
+   <path fill="#3d342b" d="m32 63 35-21v40l-35 20z"/>
+   <path fill="#b58e59" d="m15 32 8-5 35 20v11l-8 4v-11z"/>
+  </g>
+ </g>
+ <path d="M62 526H1138" stroke="#4f4b45"/>
+ <g transform="translate(63 561)">
+  <path d="M0 1h15v11H0zm2 15h11m-5-4v4" fill="none" stroke="#e8b975" stroke-width="1.6" stroke-linecap="round"/>
+  <text x="27" y="14" class="jp" fill="#c9c2b9" font-size="17">ローカルで表示</text>
+ </g>
+ <text x="1138" y="575" text-anchor="end" class="mono" fill="#cfb58f" font-size="18">unitypackage-liltoon-threejs.mogami.dev</text>
+</svg>

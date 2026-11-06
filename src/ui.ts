@@ -1,4 +1,5 @@
 const paths = {
+  external: '<path d="M8 6h10v10M18 6 6 18"/>',
   device: '<rect x="3" y="4" width="18" height="13" rx="2"/><path d="M9 21h6m-3-4v4"/>',
   play: '<path d="m8 5 11 7-11 7z" fill="currentColor" stroke="none"/>',
   pause: '<path d="M8 5v14M16 5v14" stroke-width="4"/>',
@@ -37,6 +38,7 @@ export function buildUI() {
       <div class="identity"><img src="/mark.svg" alt="" width="32" height="32"><span>unitypackage-liltoon-threejs</span></div>
       <span class="header-sep"></span><span class="product">Model viewer</span>
       <div class="session"><i></i> LOCAL SESSION</div>
+      <a class="source-link" href="https://github.com/MogamiTsuchikawa/unitypackage-liltoon-threejs" target="_blank" rel="noopener noreferrer" aria-label="GitHubでソースコードを見る（新しいタブで開きます）" title="GitHubでソースコードを見る（新しいタブで開きます）">GitHub ${icon("external")}</a>
       <button class="primary open" type="button" aria-label="ファイルを開く">${icon("folder")} <span><span class="open-prefix">ファイルを</span>開く</span></button>
       <input id="file" type="file" accept=".unitypackage" hidden>
     </header>

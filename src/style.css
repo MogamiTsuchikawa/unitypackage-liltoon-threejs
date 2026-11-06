@@ -43,6 +43,7 @@ button:disabled {
   cursor: default;
 }
 button:focus-visible,
+a:focus-visible,
 select:focus-visible,
 input:focus-visible,
 summary:focus-visible,
@@ -131,6 +132,27 @@ button {
 }
 .primary {
   margin-left: 5px;
+}
+.source-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-height: 36px;
+  flex: none;
+  padding-inline: 6px;
+  border-radius: 5px;
+  color: #d4d1cf;
+  font-size: 12px;
+  text-decoration: none;
+}
+.source-link .icon {
+  width: 12px;
+  height: 12px;
+}
+.source-link:hover {
+  color: var(--amber);
+  background: #2d2c2e;
 }
 main {
   display: grid;
@@ -784,12 +806,15 @@ footer {
     display: none;
   }
   .primary {
-    margin-left: auto;
+    margin-left: 0;
     min-height: 32px;
     flex: none;
     gap: 5px;
     padding-inline: 8px;
     font-size: 11px;
+  }
+  .source-link {
+    margin-left: auto;
   }
   .panel-title {
     height: 39px;
@@ -877,6 +902,13 @@ footer {
   }
 }
 @media (max-width: 430px) {
+  .topbar {
+    gap: 5px;
+    padding-inline: 12px;
+  }
+  .source-link .icon {
+    display: none;
+  }
   .open-prefix {
     display: none;
   }
