@@ -1,4 +1,5 @@
 const paths = {
+  device: '<rect x="3" y="4" width="18" height="13" rx="2"/><path d="M9 21h6m-3-4v4"/>',
   play: '<path d="m8 5 11 7-11 7z" fill="currentColor" stroke="none"/>',
   pause: '<path d="M8 5v14M16 5v14" stroke-width="4"/>',
   wave: '<path d="M2 12h3c2 0 2-7 4-7s2 14 5 14 2-7 4-7h4"/>',
@@ -33,10 +34,10 @@ const glyph =
 export function buildUI() {
   document.querySelector("#app")!.innerHTML = `
     <header class="topbar">
-      <div class="identity"><img src="/mark.svg" alt="" width="32" height="32"><span>Toonbench</span></div>
+      <div class="identity"><img src="/mark.svg" alt="" width="32" height="32"><span>unitypackage-liltoon-threejs</span></div>
       <span class="header-sep"></span><span class="product">Model viewer</span>
       <div class="session"><i></i> LOCAL SESSION</div>
-      <button class="primary open" type="button">${icon("folder")} ファイルを開く</button>
+      <button class="primary open" type="button" aria-label="ファイルを開く">${icon("folder")} <span><span class="open-prefix">ファイルを</span>開く</span></button>
       <input id="file" type="file" accept=".unitypackage" hidden>
     </header>
     <main>
@@ -46,9 +47,14 @@ export function buildUI() {
           <div class="projection"><b class="cross">+</b><span>Perspective</span></div>
           <div class="stage-meta"><i></i><span>WEBGL 2</span></div>
           <div class="cover" id="cover">
-            <div class="welcome" id="welcome">${glyph}<div class="eyebrow">PACKAGE IMPORT</div><h2>モデルを開く</h2><p>.unitypackage をここにドロップ</p>
-              <button class="select-file open" type="button">${icon("folder")} ファイルを選択</button>
-            </div>
+            <section class="welcome" id="welcome" aria-labelledby="welcome-title">
+              <div class="welcome-mast"><div class="eyebrow">LOCAL FILE <span>/</span> AVATAR VIEWER</div>${glyph}</div>
+              <h2 id="welcome-title">アバターを<wbr>ブラウザで見る</h2>
+              <p class="welcome-copy">Unityの <code>.unitypackage</code> を開くと、3Dアバターを回しながらlilToonの陰影やテクスチャを確認できます。対応モデルでは表情やモーションも試せます。</p>
+              <div class="welcome-actions"><button class="select-file open" type="button" aria-describedby="import-format">${icon("folder")} ファイルを選択</button>
+                <span id="import-format">または <code>.unitypackage</code> をここにドロップ</span></div>
+              <p class="local-note">${icon("device")}<span>ファイルはブラウザ内で読み込みます。アップロードは不要です。</span></p>
+            </section>
             <div class="loading-card" id="loading" hidden><span class="spinner"></span><h2 id="load-title">読み込み中</h2><p id="load-phase" aria-live="polite"></p></div>
           </div>
           <div class="view-tools"><button id="home" class="view-btn" disabled title="全体を表示 (R)" aria-label="全体を表示">${icon("focus")}</button><span></span><button id="spin" class="view-btn" disabled title="自動回転" aria-label="自動回転" aria-pressed="false">${icon("rotate")}</button></div>
@@ -90,7 +96,7 @@ export function buildUI() {
         <div class="engine">${icon("chip")}<div><small>RENDER ENGINE</small><b>three.js <span>/</span> lilToon</b></div></div>
       </aside>
     </main>
-    <footer><span class="status" role="status"><i id="status-dot"></i><span id="status">ファイルを待機中</span></span><span class="foot-brand">TOONBENCH <b>/</b> VIEWER</span></footer>
+    <footer><span class="status" role="status"><i id="status-dot"></i><span id="status">ファイルを待機中</span></span><span class="foot-brand">unitypackage-liltoon-threejs</span></footer>
     <div id="error" role="alert" hidden><span id="error-text"></span><button aria-label="メッセージを閉じる" id="close-error">×</button></div>
   `;
 }

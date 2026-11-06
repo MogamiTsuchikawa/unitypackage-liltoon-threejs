@@ -1,4 +1,6 @@
-# Toonbench
+# unitypackage-liltoon-threejs
+
+[ビューアを開く](https://unitypackage-liltoon-threejs.mogami.dev/)
 
 Unity の `.unitypackage` をブラウザで開き、マテリアルを [three-liltoon](https://github.com/mochiya-labs/three-liltoon) で描画する Vite / TypeScript 製のビューアです。Unity Editor での変換やモデルのアップロードは不要です。
 
